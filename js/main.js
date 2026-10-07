@@ -266,9 +266,10 @@
         sideGametes: fatherGametes.map(function (g) {
           return g.chr === 'Y' ? 'Y' : g.a;
         }),
-        cells: cells
+          cells: cells
       };
     },
+    outcomeNote: 'Males are hemizygous for the X — one recessive allele is enough to cause disease, which is why X-linked recessive disorders appear far more often in boys. A carrier female (<span class="mono">X' + sup('H') + 'X' + sup('h') + '</span>) shows no symptoms but has a <strong>50%</strong> chance of passing the recessive X to each child. Fathers can never pass an X-linked trait to a son — they give sons a Y, not an X.',
     parentGenoHTML: function (p) {
       if (p.sex === 'female') {
         var sorted = p.alleles.slice().sort(function (x, y) {
